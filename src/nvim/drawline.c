@@ -403,7 +403,7 @@ static inline void get_line_number_str(win_T *wp, linenr_T lnum, char_u *buf, si
     if (num == 0 && wp->w_p_nu && wp->w_p_rnu) {
       // 'number' + 'relativenumber'
       num = lnum;
-      fmt = "%-*ld ";
+      fmt = "%*ld ";
     }
   }
 
